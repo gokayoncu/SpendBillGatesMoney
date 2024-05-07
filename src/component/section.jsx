@@ -11,8 +11,8 @@ function Section({products}) {
   // useEffect( () =>{
   //   console.log({price})
   // },[count])
-
-  const [money, setMoney] =  useState(99999999999999)
+  let billMoney=99999999999999;
+  const [money, setMoney] =  useState(billMoney)
   
   
     return (
@@ -27,7 +27,7 @@ function Section({products}) {
          <div className='receipt'>
             
             {
-              money != 99999999999999 ? <h3 className='receipt-header'>RECEİPT</h3> : null 
+              money != billMoney ? <h3 className='receipt-header'>RECEİPT</h3> : null 
             }
             {
             products?.map((product)=>(
@@ -36,7 +36,7 @@ function Section({products}) {
             }
             <hr/>
             {
-              money != 99999999999999 ? <h4 className='total-receipt'>TOTAL= {99999999999999-money }</h4> : null 
+              money != billMoney ? <h4 className='total-receipt'>TOTAL= {billMoney-money }</h4> : null 
             }
           </div>        
       </div>
