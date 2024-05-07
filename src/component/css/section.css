@@ -1,0 +1,64 @@
+
+.sections{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    border: 0px solid transparent;
+    background-color: #fff;
+    max-height: 30rem;
+    .img{
+        width: 40%;
+        height: 50%;
+        margin-top: 1rem;
+    }
+    h4{
+        margin-bottom: 0;
+        font-size: 2rem;
+        background-color: #fff;
+    }
+    p{
+        font-size: 1.7rem;
+        color: #24c486;
+        font-weight: 600;
+        background-color: #fff;
+        margin-top: 0;
+    }
+    .shopping{
+        display: flex;
+        flex-direction: row;
+        gap: 1.4rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        width: 100%;
+        nav{
+            width: 25%;
+            padding-top: 1%;
+            height: 2.2rem;
+            background-color: #fff;
+            text-align: center;
+            font-size: 1.5rem;
+            block-size: border-box;
+            appearance: none;
+            border-radius: .2rem;
+            border: 1px solid #b2bec3;
+        }
+        button{            
+            width: 25%;
+            border: 0px transparent;
+            font-size: 1rem;
+            color: #fff;
+            border-radius: .4   rem;
+        }
+        #sell{
+            background-color: red;
+        }
+        #buy{
+            background: linear-gradient(180deg, #2ecc71, #1abc9c);
+        }
+        button:active{
+            border: 2px solid;
+        }
+    }
+}
