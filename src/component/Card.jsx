@@ -6,7 +6,7 @@ function Card({product, money, setMoney}) {
     
   let [count , setCount] = useState(0);
 
-  const {id,title,price,image,receipt,isVisible,total} = product;
+  const {id,title,price,image} = product;
   
     
   

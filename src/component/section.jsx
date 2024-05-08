@@ -26,18 +26,18 @@ function Section({products}) {
         }        
          <div className='receipt'>
             
-            {
-              money != billMoney ? <h3 className='receipt-header'>RECEİPT</h3> : null 
-            }
-            {
-            products?.map((product)=>(
-              <Article  key={product.id} product={product} money={money} setMoney={setMoney} />
-              ))
-            }
-            <hr/>
-            {
-              money != billMoney ? <h4 className='total-receipt'>TOTAL= {billMoney-money }</h4> : null 
-            }
+          {
+            money != billMoney ? <h3 className='receipt-header'>RECEİPT</h3> : null 
+          }
+          {
+          products?.map((product)=>(
+            <Article  key={product.id} product={product} money={money} setMoney={setMoney} />
+            ))
+          }
+          <hr/>
+          {
+            money != billMoney ? <h4 className='total-receipt'>TOTAL= {billMoney-money }</h4> : null 
+          }
           </div>        
       </div>
       </>              

@@ -3,7 +3,7 @@ import './css/Article.css'
 
 
 function Article({product, money, setMoney}) {
-  const {id,title,price,image,receipt,isVisible,total} = product;
+  const {id,title,receipt,isVisible,total} = product;
   
 
 
